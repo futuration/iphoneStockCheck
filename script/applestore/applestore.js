@@ -62,8 +62,8 @@ async function watchStock(goods_models, applestore_region) {
             // 库存变化推送通知
             stock[parts]["stores"][storeNumber]["notify"] = true;
           } else {
-            // 库存未变化不推送
-            stock[parts]["stores"][storeNumber]["notify"] = false;
+            // 库存未变化【还是推送！！！】
+            stock[parts]["stores"][storeNumber]["notify"] = true;
           }
         }
 
